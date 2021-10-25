@@ -11,6 +11,14 @@ body {
     background-color: #126e88; }
     .grilla span {
       display: none; }
+    .grilla .header {
+      grid-area: header;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .grilla .header input {
+        height: 30%; }
     .grilla nav {
       grid-area: nav;
       padding-top: 30px;
@@ -46,13 +54,11 @@ body {
     .grilla .contenedor {
       grid-area: container;
       display: grid;
-      width: 100hw;
+      margin-right: 10px;
       height: 100%;
       grid-template-rows: auto auto;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-areas: "one two three four" "five six seven eight";
-      margin: 0px;
-      padding: 0px;
       gap: 20px; }
       .grilla .contenedor .products {
         background-color: #1a434e;

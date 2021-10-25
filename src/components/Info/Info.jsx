@@ -1,6 +1,9 @@
 import React from "react";
+import { useState } from "react";
 
 const Info = () => {
+  const [pokemon, setPokemon] = useState(null);
+
   let URL = "https://pokeapi.co/api/v2/pokemon/1";
 
   fetch(URL)
@@ -12,7 +15,7 @@ const Info = () => {
     });
   return (
     <div>
-      <p>{data}</p>
+      <p></p>
     </div>
   );
 };

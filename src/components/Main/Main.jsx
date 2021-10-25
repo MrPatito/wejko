@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import NavBar from "../NavBar/NavBar";
 import ListItemContainer from "../ListItemContainer/ListItemContainer";
+import HeaderAPI from "../HeaderApi/HeaderAPI";
 const Main = () => {
   const [items, setItems] = useState(0);
   const [open, setOpen] = useState(false);
@@ -15,6 +16,7 @@ const Main = () => {
   return (
     <div className="grilla">
       <NavBar items={items} />
+      <HeaderAPI />
       {open && <ListItemContainer items={items} setItems={setItems} />}
     </div>
   );
