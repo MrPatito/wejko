@@ -4,7 +4,7 @@ import { useState } from "react";
 const Counter = ({ unitStock, productNo, items, setItems }) => {
   const [counter, setCounter] = useState(0);
   const [stock, setStock] = useState(unitStock);
-  // const [mounted, setMounted] = useState(false);
+  const [showInfo, setShowInfo] = useState(false);
   const [cart, setCart] = useState({ cant: "" });
 
   const { cant } = cart;
@@ -54,6 +54,11 @@ const Counter = ({ unitStock, productNo, items, setItems }) => {
     }
   }
 
+  function info() {
+    setShowInfo(!showInfo);
+    console.log(showInfo);
+  }
+
   const handleChange = (event) => {
     let eventValue = parseInt(event.target.value);
     console.log("valor", eventValue);
@@ -69,20 +74,26 @@ const Counter = ({ unitStock, productNo, items, setItems }) => {
 
   return (
     <div className="counter">
-      <div id="input" class="input-group mb-3">
-        <form className="form">
-          <label>
-            <input
-              className="cantidad"
-              name="cant"
-              onChange={handleChange}
-              type="string"
-              value={counter}
-            ></input>
-          </label>
-        </form>
+      <div id="input">
+        <div className="col-75">
+          <input
+            type="string"
+            name="cant"
+            onChange={handleChange}
+            value={counter}
+          />
+        </div>
       </div>
-
+      <div className="infoButton">
+        <button
+          onClick={info}
+          id="info"
+          type="button"
+          className="btn btn-primary"
+        >
+          More Info
+        </button>
+      </div>
       <div className="actionButtons">
         <button
           onClick={incr}

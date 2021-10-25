@@ -4,7 +4,6 @@ import NavBar from "../NavBar/NavBar";
 import ListItemContainer from "../ListItemContainer/ListItemContainer";
 const Main = () => {
   const [items, setItems] = useState(0);
-
   const [open, setOpen] = useState(false);
 
   useEffect(() => {

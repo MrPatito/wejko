@@ -1,5 +1,6 @@
 import React from "react";
 import Counter from "../Counter/Counter";
+import Info from "../Info/Info";
 
 const Item = ({ text, title, img, items, setItems }) => {
   return (
@@ -10,9 +11,7 @@ const Item = ({ text, title, img, items, setItems }) => {
       <div className="name">
         <h2>{title}</h2>
       </div>
-      <div className="info">
-        <p>{text}</p>
-      </div>
+      <Info />
       <Counter unitStock={3} setItems={setItems} items={items} />
     </div>
   );
