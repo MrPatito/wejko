@@ -8,20 +8,6 @@ const Counter = ({ unitStock, productNo, items, setItems }) => {
   const [cart, setCart] = useState({ cant: "" });
 
   const { cant } = cart;
-  // const deploy = (event)=>{
-  //   setMounted(!mounted);
-  // }
-
-  // useEffect(()=>{
-  //   setTimeout(()=>{
-  //     if (mounted === false) {
-  //       console.log('hidden')
-  //     }
-  //     else{
-  //       console.log('deployed')
-  //     }
-  //   },1000)
-  // }, [mounted])
 
   function decr() {
     if (counter > 0) {

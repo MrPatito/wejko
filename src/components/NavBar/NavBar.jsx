@@ -41,7 +41,7 @@ const NavBar = ({ items, toggleMenu }) => {
           <img src="Multimedia/icons8-contact-64.png" alt="Contacto" />
         </a>
       </li>
-      <CartWidget toggleMenu={toggleMenu} items={items} />
+      <CartWidget items={items} />
     </nav>
   );
 };
