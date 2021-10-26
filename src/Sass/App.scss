@@ -4,7 +4,7 @@ body {
 
 @media only screen and (min-width: 481px) {
   .grilla {
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 150px auto auto;
     grid-template-columns: 6rem auto;
     grid-template-areas:
       "nav header"
@@ -105,6 +105,7 @@ body {
 
       gap: 20px;
 
+      //products
       .products {
         background-color: #1a434e;
         border-radius: 0 0 10px 10px;

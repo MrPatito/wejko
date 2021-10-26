@@ -2,7 +2,7 @@ import React from "react";
 import Counter from "../Counter/Counter";
 import Info from "../Info/Info";
 
-const Item = ({ text, title, img, items, setItems }) => {
+const Item = ({ title, img, items, setItems }) => {
   return (
     <div className="products">
       <div className="image">

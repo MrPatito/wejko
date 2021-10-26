@@ -28,6 +28,8 @@ const HeaderAPI = () => {
 
   return (
     <div className="header">
+      <p>Hola soy un Home</p>
+
       <form className="d-flex">
         <input
           className="search"

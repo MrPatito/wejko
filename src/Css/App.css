@@ -3,7 +3,7 @@ body {
 
 @media only screen and (min-width: 481px) {
   .grilla {
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 150px auto auto;
     grid-template-columns: 6rem auto;
     grid-template-areas: "nav header" "nav container" "nav foot";
     margin: 0px;
